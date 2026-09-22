@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Manejar el inicio
+DirectoryIndex index.php
+
+# Redirigir categorías dinámicamente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !/admin/ [NC]
+RewriteRule ^([a-z0-9-]+)/?$ categoria.php?slug=$1 [L,QSA,NC]

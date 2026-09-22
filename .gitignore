@@ -1,0 +1,27 @@
+# Datos sensibles
+/data/users.php
+/data/ecc_keys.php
+
+# Directorios de imágenes subidas
+/imagenes/trabajos_subidos/
+/imagenes/clientes/
+
+# Logs
+/admin/error_log
+error_log
+*.log
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos temporales de desarrollo
+extract.txt
+extract_mob.txt
